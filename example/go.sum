@@ -1,0 +1,8 @@
+github.com/clevergo/clevergo v1.4.1 h1:hQRpL3ETJ8gdS9YLtr9HmpdLTyoXWyg+zxTQ2k9TI7I=
+github.com/clevergo/clevergo v1.4.1/go.mod h1:/BB51A8ohBG/GCHbN7mUPK6vJNm6XXC+4V/yS0c7RsA=
+github.com/clevergo/tencentcaptcha v0.0.0-20200318000851-8ee8d803268b h1:z4hwOB+fY/fmmDqt/lRPZJyG5krf8hy86IEqmCzRvx8=
+github.com/clevergo/tencentcaptcha v0.0.0-20200318000851-8ee8d803268b/go.mod h1:hEqHnUxFmvP9UtdRM8UWNRX4wYos/ZX+S55ukzsPVoU=
+github.com/clevergo/tencentcaptcha v0.0.0-20200318003328-b863d99fc1ce h1:rK4J1aruDKZfhWxlzWDMGuv99dhfmB+gniC+HJgvZa0=
+github.com/clevergo/tencentcaptcha v0.0.0-20200318003328-b863d99fc1ce/go.mod h1:0jr4XKIb2UX8YSDo09voj/m/jVZWQXs2ivpWu1mok88=
+github.com/tencentcloud/tencentcloud-sdk-go v3.0.134+incompatible h1:vl+T5eWcy2z/Cm5g0ivDe//tMUmrFExrSUvYk00m7fg=
+github.com/tencentcloud/tencentcloud-sdk-go v3.0.134+incompatible/go.mod h1:0PfYow01SHPMhKY31xa+EFz2RStxIqj6JFAJS+IkCi4=

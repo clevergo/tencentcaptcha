@@ -10,39 +10,39 @@ import (
 	captcha "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/captcha/v20190722"
 )
 
-// Captcha contains captcha's infomation, such as application ID, secret key.
-type Captcha struct {
+// Application contains captcha's infomation, such as application ID, secret key.
+type Application struct {
 	client      *captcha.Client
-	appID       uint64
+	id          uint64
 	secretKey   string
 	captchaType uint64
 }
 
-// New returns a captcha with the given client, application ID and secret key.
-func New(client *captcha.Client, appID uint64, secretKey string) *Captcha {
-	return &Captcha{
+// New returns a captcha application with the given client, application ID and secret key.
+func New(client *captcha.Client, id uint64, secretKey string) *Application {
+	return &Application{
 		client:      client,
-		appID:       appID,
+		id:          id,
 		secretKey:   secretKey,
 		captchaType: 9,
 	}
 }
 
-// AppID returns the application ID.
-func (c *Captcha) AppID() uint64 {
-	return c.appID
+// ID returns the application ID.
+func (app *Application) ID() uint64 {
+	return app.id
 }
 
 // Verify verifies whether is captcha info is valid.
-func (c *Captcha) Verify(ticket, randstr, ipAddr string) error {
+func (app *Application) Verify(ticket, randstr, ipAddr string) error {
 	req := captcha.NewDescribeCaptchaResultRequest()
 	req.Ticket = &ticket
 	req.Randstr = &randstr
-	req.AppSecretKey = &c.secretKey
-	req.CaptchaAppId = &c.appID
-	req.CaptchaType = &c.captchaType
+	req.AppSecretKey = &app.secretKey
+	req.CaptchaAppId = &app.id
+	req.CaptchaType = &app.captchaType
 	req.UserIp = &ipAddr
-	resp, err := c.client.DescribeCaptchaResult(req)
+	resp, err := app.client.DescribeCaptchaResult(req)
 	if err != nil {
 		return err
 	}

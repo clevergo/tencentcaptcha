@@ -13,10 +13,10 @@ import (
 )
 
 var (
-	secretID            = ""
-	secretKey           = ""
-	appID        uint64 = 2004372521
-	appSecretKey        = ""
+	secretID            = ""         // 安全凭证 ID
+	secretKey           = ""         // 安全凭证 Key
+	appID        uint64 = 2004372521 // 验证码应用 ID
+	appSecretKey        = ""         // 验证码应用 Secret Key
 	app          *tencentcaptcha.Application
 )
 

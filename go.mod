@@ -1,4 +1,4 @@
-module github.com/clevergo/tencentcaptcha
+module clevergo.tech/tencentcaptcha
 
 go 1.13
 
